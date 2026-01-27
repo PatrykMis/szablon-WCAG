@@ -1,8 +1,21 @@
 MIT License
 
-Copyright (c) 2020 Laboratory of Tyfloinformatics in Wrocław University of Science and Technology. (http://pwr.edu.pl)
-The main programmers and final authors of this software are Magdalena Kruczek and Karolina Jankowska (magdalena.kruczek@pwr.edu.pl karolina.jankowska@pwr.edu.pl).
-You must paste this header in all sublicenses of the software. The information about main programmer must be in all subversions of this application.
+Copyright (c) 2020 
+Laboratory of Tyfloinformatics, Wrocław University of Science and Technology
+
+Originally developed by:
+Magdalena Kruczek <magdalena.kruczek@pwr.edu.pl>
+Karolina Jankowska <karolina.jankowska@pwr.edu.pl>
+
+Copyright (c) 2025 
+Stowarzyszenie na Rzecz Równego Dostępu do Kształcenia "Twoje Nowe Możliwości"
+
+Refactored and maintained by:
+Patryk Miś <p.mis@tnm.org.pl> on behalf of the above organization.
+
+This refactored version is based on the original concept and structure
+designed by the above authors and laboratory. Full credit and acknowledgment
+are retained in respect to their foundational work.
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
