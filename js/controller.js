@@ -36,11 +36,11 @@ const form = Object.fromEntries(new FormData(document.getElementById("goToPageFo
 
     // Navigation handlers for chapters and pages
     function navigateToNextPage() {
-        _navigateToPage(parseInt(model.currentPage) + 1 , 10);  // base 10 for safety
+        _navigateToPage(parseInt(model.currentPage, 10) + 1);  // base 10 for safety
     }
 
     function navigateToPrevPage() {
-        _navigateToPage(parseInt(model.currentPage) - 1, 10);  // base 10 for safety
+        _navigateToPage(parseInt(model.currentPage, 10) - 1);  // base 10 for safety
     }
 
     function navigateToNextChapter() {
@@ -68,7 +68,7 @@ const form = Object.fromEntries(new FormData(document.getElementById("goToPageFo
         }
         const targetElement = document.getElementById(targetChapterNode.id);
         targetElement.scrollIntoView();
-        targetElement.focus();
+        targetElement.focus({ preventScroll: true });
         model.currentChapterId = targetChapterNode.id;
     }
 
@@ -82,7 +82,7 @@ const form = Object.fromEntries(new FormData(document.getElementById("goToPageFo
         }
         const targetElement = document.getElementById(util.createPageId(targetPageNumber));
         targetElement.scrollIntoView();
-        targetElement.focus();
+        targetElement.focus({ preventScroll: true });
         model.currentPage = targetPageNumber;
     }
 
