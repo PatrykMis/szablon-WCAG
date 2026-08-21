@@ -111,7 +111,7 @@ const view = function() {
                 if (node.children && node.children.length > 0) {
                     const subLi = helpers.makeEl("li");
                     const subUl = helpers.makeEl("ul", {
-                        className: "nav nav-pills flex-column ml-3"
+                        className: "nav nav-pills flex-column ms-3"
                     });
                     subLi.appendChild(subUl);
                     parent.appendChild(subLi);
