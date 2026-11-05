@@ -37,7 +37,7 @@ nav.row {
 
 a {
     color: #0056b3;
-    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .tfl-side-container {
@@ -85,7 +85,7 @@ input::-webkit-inner-spin-button {
 }
 
 input[type="number"] {
-    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 .tfl-center {
@@ -239,7 +239,7 @@ article {
     outline: 1px dashed #000000;
 }
 
-.tfl-deque-tree [role="tree"] li[role="treeitem"] .tfl-deque-tree-leaf:before {
+.tfl-deque-tree [role="tree"] li[role="treeitem"] .tfl-deque-tree-leaf::before {
     content: "";
     float: left;
     margin-right: 5px;
@@ -262,11 +262,11 @@ article {
     margin-right: 10px;
 }
 
-.tfl-deque-tree [role="tree"] [role="treeitem"][aria-expanded="true"]>.tfl-deque-tree-branch:after {
+.tfl-deque-tree [role="tree"] [role="treeitem"][aria-expanded="true"]>.tfl-deque-tree-branch::after {
     content: "\2BC6";
 }
 
-.tfl-deque-tree [role="tree"] [role="treeitem"][aria-expanded="false"]>.tfl-deque-tree-branch:after {
+.tfl-deque-tree [role="tree"] [role="treeitem"][aria-expanded="false"]>.tfl-deque-tree-branch::after {
     content: "\2BC8";
 }
 
